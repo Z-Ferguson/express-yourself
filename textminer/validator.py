@@ -30,5 +30,13 @@ def phone_number(nums):
     return re.match(r'\(*\d{3}\)*[-\s\.]*\d{3}[-\s\.]*\d{4}', nums)
 
 
-# def money():
-#     return
+def money(nums):
+    return re.search(r'^\$([0-9]+(,[0-9]{3})*)(\.[0-9]{2})?$', nums)
+
+
+def zipcode(nums):
+    return re.search(r'^[0-9]{5}(-[0-9]{4})?$', nums)
+
+
+def date(nums):
+    return re.match(r'^[0-9]{1,4}[/-][0-9]{1,2}[/-][0-9]{2,4}$', nums)
