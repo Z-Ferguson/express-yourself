@@ -19,3 +19,14 @@ def phone_number(pn):
         return number_dict
     except:
         return None
+
+
+def money(c_string):
+    money_dict = {}
+    try:
+        groups = re.match(r'^(\D)(\d+(,\d{3})*(\.\d{2})?)$', c_string).groups()
+        money_dict["currency"] = groups[0]
+        money_dict["amount"] = float(re.sub(r',', '', groups[1]))
+        return money_dict
+    except:
+        return None
