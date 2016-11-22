@@ -4,9 +4,9 @@
 ## Files
 
 1. textminer
-..1. extractor.py
-..2. separator.py
-..3. validator.py
+⋅⋅1. extractor.py
+⋅⋅2. separator.py
+⋅⋅3. validator.py
 
 2. tests
 ..1. test_extractor.py
